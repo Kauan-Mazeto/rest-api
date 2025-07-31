@@ -17,3 +17,5 @@ app.post('/usuarios/criar', (req, res) => {
     const { nome, email } = req.body;
     res.status(201).json({menssagem: `Usuário ${nome} criado com sucesso!`, email});
 });
+
+app.listen(3000)
